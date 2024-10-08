@@ -1,5 +1,4 @@
 -----------------------------------------------------------------------------------------
--- CS371-01 Programming Assignment 2
 -- Displaying and Interacting with a Sprite
 -- Eric Delgado
 -- 10/11/24
