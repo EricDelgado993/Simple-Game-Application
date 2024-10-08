@@ -1,7 +1,7 @@
 <b>Simple Game Application</b>
 <br>This Lua-based Solar2D game features "Esper," a character controlled by player taps. The game uses sprite animations, sound effects, and a health system. Tapping the screen moves Esper to the tap location with a "run" animation. Each tap on the character reduces its health (starting at 3 HP), triggering different animations and sounds. When Esper's HP reaches zero, a "game over" state is displayed, and the player can restart the game by tapping an end message. The program ensures smooth transitions, prevents animation interruptions, and manages memory efficiently.</br>
 <br><b>Project File</b></br>
-  - [Simple Game Program](https://github.com/EricDelgado993/Transition-Effect-Application/blob/main/Transition%20Effect%20Application/main.lua)
+  - [Simple Game Program](https://github.com/EricDelgado993/Simple-Game-Application/blob/main/Simple%20Game%20Application/main.lua)
 
 <br><b>Features</b></br>
   - <b>Interactive Sprite Animations:</b> The main character ("Esper") is displayed as a sprite with different animations (running, dying, dead). The animation sequences are defined using sprite sheets and managed by graphics.newImageSheet and display.newSprite.
@@ -16,4 +16,4 @@
   - <b>Dynamic Scaling and Positioning:</b> The character sprite is scaled up and positioned at the screen's center, with dynamic adjustments to sprite bounds.
 
 <br><b>Application Screenshot</b></br>
-![Screenshot](https://github.com/user-attachments/assets/0a5a88d2-07eb-42a3-b11f-6ff6b0ad2f9c)
+![Screenshot](https://github.com/user-attachments/assets/1f3770c1-b54c-41f5-a82f-b42de38f68fc)
