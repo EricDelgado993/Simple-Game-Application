@@ -1,19 +1,48 @@
-<b>Simple Game Application</b>
-<br>This Lua-based Solar2D game features "Esper," a character controlled by player taps. The game uses sprite animations, sound effects, and a health system. Tapping the screen moves Esper to the tap location with a "run" animation. Each tap on the character reduces its health (starting at 3 HP), triggering different animations and sounds. When Esper's HP reaches zero, a "game over" state is displayed, and the player can restart the game by tapping an end message. The program ensures smooth transitions, prevents animation interruptions, and manages memory efficiently.</br>
-<br><b>Project File</b></br>
-  - [Simple Game Program](https://github.com/EricDelgado993/Simple-Game-Application/blob/main/Simple%20Game%20Application/main.lua)
+# Simple Game Application
 
-<br><b>Features</b></br>
-  - <b>Interactive Sprite Animations:</b> The main character ("Esper") is displayed as a sprite with different animations (running, dying, dead). The animation sequences are defined using sprite sheets and managed by graphics.newImageSheet and display.newSprite.
-  - <b>Tap-Based Movement:</b> Players can tap on the screen to move the "Esper" character to the tap location. The movement is animated using the "run" sequence with smooth transitions to the new location.
-  - <b>Character Health (HP) System:</b> "Esper" has an HP system that starts with 3 health points. Each tap on the character reduces its health, triggering different sound effects and animations.
-  - <b>Damage Response:</b> When the character is tapped, its HP decreases, and different sound effects and animations are triggered based on the HP level. On the final hit, the "dead" animation is played, and the character fades out.
-  - <b>Sound Effects:</b> Different sound effects are played based on specific events.
-  - <b>End Game and Restart:</b> After the character's HP reaches zero, an "End" message appears on the screen. Players can tap on the "End" message to restart the game.
-  - <b>Smooth Transitioning:</b> Movement and damage animations use transitions (transition.to) and easing functions to create smooth visual effects.
-  - <b>Automatic Object Deletion:</b> Once the character dies, it fades out over 2 seconds and is removed from memory to prevent further interactions.
-  - <b>Event Management:</b> Event listeners are used to handle screen taps and interactions with the character. Prevents event interference while animations are in progress by using boolean flags (isMoving).
-  - <b>Dynamic Scaling and Positioning:</b> The character sprite is scaled up and positioned at the screen's center, with dynamic adjustments to sprite bounds.
+## Overview
+The **Simple Game Application** is a Lua-based game built with Solar2D, featuring **Esper**, a character controlled by player taps. The game includes sprite animations, sound effects, and a health system. Players tap on the screen to move Esper, who has a health system starting with 3 HP. Each tap on Esper reduces its health, triggering animations and sounds. Once Esper's HP reaches zero, a "game over" state is shown, and players can restart the game by tapping the "End" message. The game ensures smooth transitions, manages memory efficiently, and prevents animation interruptions.
 
-<br><b>Application Screenshot</b></br>
+## Project File
+- [Simple Game Program](https://github.com/EricDelgado993/Simple-Game-Application/blob/main/Simple%20Game%20Application/main.lua)
+
+## Features
+
+### 1. Interactive Sprite Animations
+- The main character, **Esper**, is displayed as a sprite with multiple animations (running, dying, dead).
+- Animations are defined using sprite sheets and managed with `graphics.newImageSheet` and `display.newSprite`.
+
+### 2. Tap-Based Movement
+- Players can tap anywhere on the screen to move **Esper** to the tapped location.
+- Movement is animated using the "run" sequence with smooth transitions to the new location.
+
+### 3. Character Health (HP) System
+- **Esper** starts with 3 health points (HP).
+- Each tap on the character decreases its health, triggering different sound effects and animations.
+
+### 4. Damage Response
+- When the character is tapped, its HP decreases, triggering corresponding sound effects and animations.
+- On the final tap, the "dead" animation is played, and the character fades out.
+
+### 5. Sound Effects
+- Different sound effects are played based on specific events, such as tapping the character or reaching the game over state.
+
+### 6. End Game and Restart
+- When **Esper's** HP reaches zero, an "End" message is displayed.
+- Players can tap on the "End" message to restart the game.
+
+### 7. Smooth Transitioning
+- Movement and damage animations use transitions (`transition.to`) with easing functions to create smooth visual effects.
+
+### 8. Automatic Object Deletion
+- Once the character dies, it fades out over 2 seconds and is removed from memory to prevent further interactions.
+
+### 9. Event Management
+- Event listeners are used to handle screen taps and interactions with **Esper**.
+- Animation interruptions are prevented using boolean flags (e.g., `isMoving`) to avoid event interference.
+
+### 10. Dynamic Scaling and Positioning
+- The **Esper** sprite is scaled and positioned at the screen's center, with dynamic adjustments to sprite bounds.
+
+## Application Screenshot
 ![Screenshot](https://github.com/user-attachments/assets/1f3770c1-b54c-41f5-a82f-b42de38f68fc)
