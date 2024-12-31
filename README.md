@@ -3,8 +3,12 @@
 ## Overview
 The **Simple Game Application** is a Lua-based game built with Solar2D, featuring **Esper**, a character controlled by player taps. The game includes sprite animations, sound effects, and a health system. Players tap on the screen to move Esper, who has a health system starting with 3 HP. Each tap on Esper reduces its health, triggering animations and sounds. Once Esper's HP reaches zero, a "game over" state is shown, and players can restart the game by tapping the "End" message. The game ensures smooth transitions, manages memory efficiently, and prevents animation interruptions.
 
-## Project File
+---
+
+## 📂 Project File
 - [Simple Game Program](https://github.com/EricDelgado993/Simple-Game-Application/blob/main/Simple%20Game%20Application/main.lua)
+
+---
 
 ## Features
 
@@ -43,6 +47,8 @@ The **Simple Game Application** is a Lua-based game built with Solar2D, featurin
 
 ### 10. Dynamic Scaling and Positioning
 - The **Esper** sprite is scaled and positioned at the screen's center, with dynamic adjustments to sprite bounds.
+
+---
 
 ## Application Screenshot
 ![Screenshot](https://github.com/user-attachments/assets/1f3770c1-b54c-41f5-a82f-b42de38f68fc)
